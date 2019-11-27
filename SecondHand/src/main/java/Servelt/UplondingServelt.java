@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @WebServlet("/Uploading")
 @MultipartConfig
-public class UplondingServelt extends HttpServlet {
+public class UplondingServelt extends HttpServlet {//上传房源信息
     private static final long serialVersionUID = 1L;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -53,10 +53,10 @@ public class UplondingServelt extends HttpServlet {
             file1.write(newfilename1);
             file2.write(newfilename2);
             file3.write(newfilename3);
-            String B="D:\\Idea\\daima\\SecondHand\\src\\main\\webapp\\img\\"+file11;
-            String B1="D:\\Idea\\daima\\SecondHand\\src\\main\\webapp\\img\\"+file12;
-            String B2="D:\\Idea\\daima\\SecondHand\\src\\main\\webapp\\img\\"+file13;
-            String B3="D:\\Idea\\daima\\SecondHand\\src\\main\\webapp\\img\\"+file14;
+            String B="D:\\360MoveData\\Users\\25650\\Documents\\GitHub\\FristRepository\\SecondHand\\src\\main\\webapp\\img\\"+file11;
+            String B1="D:\\360MoveData\\Users\\25650\\Documents\\GitHub\\FristRepository\\SecondHand\\src\\main\\webapp\\img\\"+file12;
+            String B2="D:\\360MoveData\\Users\\25650\\Documents\\GitHub\\FristRepository\\SecondHand\\src\\main\\webapp\\img\\"+file13;
+            String B3="D:\\360MoveData\\Users\\25650\\Documents\\GitHub\\FristRepository\\SecondHand\\src\\main\\webapp\\img\\"+file14;
             FileInputStream fis = new FileInputStream(newfilename);                            //字节输入流,用来读取原路径的文件
             FileInputStream fis1 = new FileInputStream(newfilename1);
             FileInputStream fis2 = new FileInputStream(newfilename2);
